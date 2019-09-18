@@ -8,8 +8,8 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - /Users/jonathan.carter/Documents/Code/Docker/php-local/src:/var/www/html
-      - /Users/jonathan.carter/Documents/Code/Docker/php-local/custom.ini:/usr/local/etc/php/conf.d/custom.ini
+      - ./src:/var/www/html
+      - ./custom.ini:/usr/local/etc/php/conf.d/custom.ini
 
 
     links:
